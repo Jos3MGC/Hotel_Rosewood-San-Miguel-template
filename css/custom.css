@@ -1,0 +1,78 @@
+/* Logo */
+.img-containerLogo {
+    width: 200px;
+    height: auto;
+    overflow: clip;
+    border-radius: 0.5rem;
+}
+
+.img-containerLogo img {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(50%) brightness(200%);
+}
+
+/* Video */
+#video-section {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+    pointer-events: none;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/*  */
+
+.image-container {
+    width: 100%;
+    height: 200px;
+    overflow: clip;
+    border-radius: 0.5rem;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* List info hero */
+
+.list-wList {
+    list-style-type: none
+}
+
+/* Count Down */
+
+#countdown li {
+    display: inline-block;
+    font-size: 1em;
+    list-style-type: none;
+    padding: 0.5em;
+    text-transform: uppercase;
+}
+
+#countdown li span {
+    display: block;
+    font-size: 2rem;
+}
+
+@media all and (max-width: 768px) {
+
+    #countdown li {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+
+    #countdown li span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
+}
