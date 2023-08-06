@@ -49,12 +49,9 @@
                             <a class="nav-link page-scroll" href="#faq">Preguntas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#blog">Experiencias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link page-scroll d-flex flex-row align-items-center text-egg" href="#">
+                            <a class="nav-link page-scroll d-flex flex-row align-items-center text-egg" href="#blog">
                                 <em data-feather="calendar" width="18" height="18" class="mr-2"></em>
-                                ¡Evento especial!
+                                Registrarse
                             </a>
                         </li>
                     </ul>
@@ -73,35 +70,36 @@
                         frameborder="0" allow="autoplay" class="rounded mx-2" allowfullscreen>
                     </iframe>
                 </div>
-                <div class="text-center w-25">
+                <div class="text-center container-card">
                     <div class="card bg-white p-3">
-                        <h2 class="heading-black text-capitalize text-grayDark">Evento de elegancia</h2>
-                        <hr>
-                        <div id="countdown">
-                            <h4 class="text-center text-egg">Registro del evento finaliza en:</h4>
-                            <ul class="text-black-50">
-                                <li><span id="days"></span>Días</li>
-                                <li><span id="hours"></span>Horas</li>
-                                <li><span id="minutes"></span>Min</li>
-                                <li><span id="seconds"></span>Seg</li>
-                            </ul>
+                        <div class="card-body d-flex flex-column justify-content-around">
+                            <span class="heading-black text-capitalize text-grayDark fs-3">Evento de elegancia</span>
+                            <div>
+                                <hr>
+                                <div id="countdown" class="text-center">
+                                    <h4 class="text-egg">Registro del evento finaliza en:</h4>
+                                    <ul class="text-black-50">
+                                        <li><span id="days"></span>Días</li>
+                                        <li><span id="hours"></span>Horas</li>
+                                        <li><span id="minutes"></span>Min</li>
+                                        <li><span id="seconds"></span>Seg</li>
+                                    </ul>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="d-flex flex-wrap justify-content-center mt-3">
+                                <a
+                                    class="btn btn-primary d-inline-flex flex-row align-items-center justify-content-center"
+                                    href="#forms">
+                                    Registro
+                                    <em class="ml-2" data-feather="arrow-right"></em>
+                                </a>
+                            </div>
                         </div>
-                        <hr>
-                        <div class="d-flex justify-content-between mt-3">
-                            <button
-                                class="btn btn-primary d-inline-flex flex-row align-items-center justify-content-center">
-                                Ver en el mapa
-                                <em class="ml-2" data-feather="arrow-right"></em>
-                            </button>
-                            <button
-                                class="btn btn-primary d-inline-flex flex-row align-items-center justify-content-center">
-                                Registro
-                                <em class="ml-2" data-feather="arrow-right"></em>
-                            </button>
-                        </div>
-                        <div class="d-flex justify-content-between mt-3">
-                            <div><i class="fa-solid fa-hotel m-1"></i>Rosewood San Miguel</div>
-                            <div><i class="fa-solid fa-location-pin m-1"></i>San Miguel de Allende</div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <div><i class="fa-solid fa-hotel m-1"></i><a
+                                    href="https://www.rosewoodhotels.com/es/san-miguel-de-allende"
+                                    target="_blank">Rosewood San Miguel</a></div>
                         </div>
                     </div>
                 </div>
@@ -118,6 +116,33 @@
                     <p class="text-muted lead">
                         Traemos los mas exclusivos eventos para los más conocedores de los más lujosos autos clásicos.
                     </p>
+                </div>
+            </div>
+            <div class="row mt-6">
+                <div class="col-md-6 mr-auto">
+                    <h4>Qué encontrarás en el Gran Concurso Internacional de la Elegancia 2023:</h4>
+                    <p class="mb-2 text-justify">
+                        Se exhibirán y se calificarán 450 coches de más de 40 años de antigüedad. Jaguar, Porsche,
+                        Mercedes, MG, Alfa Romeo, Mustang, Corvette, Ferrari, Mini y Modelos Ford A estarán presentes en
+                        la edición 2023 y se distribuirán en las tres hectáreas que confirman Las Caballerizas.
+                    </p>
+                    <hr>
+                    <big>3 Días de Evento: Del 01 al 03 de septiembre</big>
+                    <hr>
+                    <big>Sede: San Miguel de Allende</big>
+                    <hr>
+                    <big>Hotel: Rosewood San Miguel </big>
+                    <hr>
+                </div>
+                <div class="col-md-5 my-auto">
+                    <div class="slick-about">
+                        <img src="https://www.autobodymagazine.com.mx/wp-content/uploads/2023/03/gciegaleria_20.jpeg"
+                            class="img-fluid rounded d-block mx-auto" alt="Work 1" />
+                        <img src="https://www.elsoldetoluca.com.mx/incoming/rztmuu-autos3.jpg/ALTERNATES/LANDSCAPE_768/Autos3.jpg"
+                            class="img-fluid rounded d-block mx-auto" alt="Work 2" />
+                        <img src="https://media.timeout.com/images/105995811/750/422/image.jpg"
+                            class="img-fluid rounded d-block mx-auto" alt="Work 3" />
+                    </div>
                 </div>
             </div>
             <div class="row mt-5">
@@ -176,7 +201,7 @@
                 </div>
             </div>
             <div class="row mt-6">
-                <div class="col-md-6 mr-auto">
+                <div class="col-12 mr-auto">
                     <h2>Valores Fundamentales:</h2>
                     <p class="mb-5">
                         Valoramos la autenticidad, la creatividad y el respeto por la historia automotriz. Estamos
@@ -184,16 +209,6 @@
                         exclusivos y antiguos impulsa cada aspecto de nuestro trabajo.
                     </p>
                     <small>Donde el Pasado Sobre Ruedas Crea un Futuro Memorables.</small>
-                    <a href="#" class="btn btn-light">
-                        Try the live demo
-                    </a>
-                </div>
-                <div class="col-md-5">
-                    <div class="slick-about">
-                        <img src="img/blog-1.jpg" class="img-fluid rounded d-block mx-auto" alt="Work 1" />
-                        <img src="img/blog-2.jpg" class="img-fluid rounded d-block mx-auto" alt="Work 2" />
-                        <img src="img/blog-3.jpg" class="img-fluid rounded d-block mx-auto" alt="Work 3" />
-                    </div>
                 </div>
             </div>
         </div>
@@ -204,8 +219,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mx-auto text-center">
-                    <h2 class="text-white heading-black">Choose your pricing plan.</h2>
-                    <p class="text-light lead">Simply pricing - 7 Days free trial</p>
+                    <h2 class="text-white heading-black">Exposición de Carros de Lujo - Plan de Precios</h2>
                 </div>
             </div>
             <!--pricing tables-->
@@ -214,84 +228,101 @@
                     <div class="card-deck pricing-table">
                         <div class="card">
                             <div class="card-body">
-                                <h3 class="card-title pt-3">Personal</h3>
+                                <h3 class="card-title pt-3">
+                                    Nivel de Acceso: Básico
+                                </h3>
                                 <h2 class="card-title text-primary mb-0 pt-4">$59</h2>
-                                <div class="text-muted font-weight-medium mt-2">per month</div>
+                                <div class="text-muted font-weight-medium mt-2">por persona</div>
                                 <ul class="list-unstyled pricing-list">
-                                    <li>1 user</li>
-                                    <li>10 websites</li>
-                                    <li>Access to premium templates</li>
-                                    <li>Basic support</li>
+                                    <li>Acceso general a la exposición de carros de lujo.</li>
+                                    <li>No incluye acceso a eventos especiales ni áreas exclusivas.</li>
+                                    <li>Soporte básico</li>
                                 </ul>
-                                <a href="#" class="btn btn-primary">
-                                    Start free trial
-                                </a>
                             </div>
+                            <a href="#" class="btn btn-primary">
+                                Comprar
+                            </a>
                         </div>
                         <div class="card">
                             <div class="card-body">
-                                <h3 class="card-title pt-3">Agency</h3>
+                                <h3 class="card-title pt-3">Nivel de Acceso: VIP</h3>
                                 <h2 class="card-title text-info mb-0 pt-4">$159</h2>
-                                <div class="text-muted font-weight-medium mt-2">per month</div>
+                                <div class="text-muted font-weight-medium mt-2">por persona</div>
                                 <ul class="list-unstyled pricing-list">
-                                    <li>2-15 users</li>
-                                    <li>50 websites</li>
-                                    <li>Access to premium templates</li>
-                                    <li>Priority support</li>
+                                    <li>Acceso exclusivo a la exposición de carros de lujo.</li>
+                                    <li>
+                                        Acceso completo a todas las áreas, incluyendo zonas VIP y áreas de exhibición
+                                        exclusivas.
+                                    </li>
+                                    <li>
+                                        Cena de gala de lujo con oportunidad de conocer a fabricantes y diseñadores.
+                                    </li>
+                                    <li>
+                                        Entradas para presentaciones especiales y eventos exclusivos.
+                                    </li>
                                 </ul>
-                                <a href="#" class="btn btn-info">
-                                    Start free trial
-                                </a>
                             </div>
+                            <a href="#" class="btn btn-info">
+                                Comprar
+                            </a>
                         </div>
                         <div class="card">
                             <div class="card-body">
-                                <h3 class="card-title pt-3">Enterprise</h3>
+                                <h3 class="card-title pt-3">Paquete de Grupo</h3>
                                 <h2 class="card-title text-primary mb-0 pt-4">$499</h2>
-                                <div class="text-muted font-weight-medium mt-2">per month</div>
+                                <div class="text-muted font-weight-medium mt-2">por persona</div>
                                 <ul class="list-unstyled pricing-list">
-                                    <li>Unlimited users</li>
-                                    <li>Unlimited websites</li>
-                                    <li>Access to premium templates</li>
-                                    <li>24/7 support</li>
+                                    <li>
+                                        Acceso exclusivo a la exposición de carros de lujo para grupos de 10 personas o
+                                        más.
+                                    </li>
+                                    <li>
+                                        Tour guiado por un experto en automóviles de lujo.
+                                    </li>
+                                    <li>
+                                        Cena privada en una ubicación exclusiva.
+                                    </li>
+                                    <li>
+                                        Oportunidades de fotos y autógrafos con modelos de lujo y expertos en la
+                                        industria.
+                                    </li>
                                 </ul>
-                                <a href="#" class="btn btn-primary">
-                                    Start free trial
-                                </a>
                             </div>
+                            <a href="#" class="btn btn-primary">
+                                Start free trial
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row mt-6">
                 <div class="col-md-4 mr-auto">
-                    <h3>Everything is covered.</h3>
+                    <h3>Asistencia para estas medidas:</h3>
                     <p class="lead">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in nisi commodo, tempus odio
-                        a,
-                        vestibulum nibh.
+                    <ul>
+                        <li>Adultos mayores</li>
+                        <li>Cuidado de mascotas</li>
+                        <li>Personas que cuenten con alguna discapacidad</li>
+                    </ul>
                     </p>
                 </div>
                 <div class="col-md-7 offset-md-1">
                     <ul class="features-list">
-                        <li>Weekly new templates</li>
-                        <li>Access to new features</li>
-                        <li>MailChimp integration</li>
-                        <li>Stripe integration</li>
-                        <li>100 refund guarantee</li>
-                        <li>Advance SEO tools</li>
-                        <li>Free unlimited support</li>
+                        <li>Descuentos para estudiantes y personas mayores.</li>
+                        <li>Paquetes familiares con precios especiales para adultos y niños.</li>
+                        <li>Boletos para un solo día o pases para múltiples días.</li>
                     </ul>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-md-8 col-12 divider top-divider mx-auto pt-5 text-center">
-                    <h3>Try Knight free for 7 days</h3>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in nisi commodo,
-                        tempus odio a, vestibulum nibh.</p>
-                    <button class="btn btn-primary">
-                        Create your account
-                    </button>
+                    <h3>¿Tienes alguna pregunta?</h3>
+                    <p class="mb-4">
+                        Nuestro personal esta calificado para responder a tus preguntas.
+                    </p>
+                    <a class="btn btn-primary" href="#forms">
+                        Contactar
+                    </a>
                 </div>
             </div>
         </div>
@@ -302,50 +333,68 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mx-auto text-center">
-                    <h2>Frequently asked questions</h2>
-                    <p class="text-muted lead">Answers to most common questions.</p>
+                    <h2>Preguntas frecuentes</h2>
+                    <p class="text-muted lead">Respuestas a las preguntas frecuentes.</p>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-md-10 mx-auto">
                     <div class="row">
                         <div class="col-md-6 mb-5">
-                            <h6>Can I try it for free?</h6>
-                            <p class="text-muted">Nam liber tempor cum soluta nobis eleifend option congue nihil imper
-                                per tem por legere me doming.</p>
+                            <h6>¿Cuándo y dónde se llevará a cabo la exposición de carros de lujo?</h6>
+                            <p class="text-muted">
+                                La exposición de carros de lujo se llevará a cabo del 1 al 3 de septiembre en el hotel
+                                "Rosewood San Miguel". Consulta nuestra página web para obtener más detalles sobre la
+                                ubicación exacta y horarios.
+                            </p>
                         </div>
                         <div class="col-md-6 mb-5">
-                            <h6>Do you have hidden fees?</h6>
-                            <p class="text-muted">Nam liber tempor cum soluta nobis eleifend option congue nihil imper
-                                per tem por legere me doming.</p>
+                            <h6>¿Necesito comprar boletos por adelantado o puedo adquirirlos en el lugar del evento?
+                            </h6>
+                            <p class="text-muted">
+                                Puedes comprar boletos por adelantado en nuestra página web o en la entrada del evento,
+                                sujeto a disponibilidad. Sin embargo, te recomendamos comprar tus boletos con
+                                anticipación para asegurar tu acceso y aprovechar posibles descuentos.
+                            </p>
                         </div>
                         <div class="col-md-6 mb-5">
-                            <h6>What are the payment methods you accept?</h6>
-                            <p class="text-muted">Nam liber tempor cum soluta nobis eleifend option congue nihil imper
-                                per tem por legere me doming.</p>
+                            <h6>¿Los niños tienen que pagar para entrar?</h6>
+                            <p class="text-muted">
+                                Los niños menores de 12 años entran gratis cuando están acompañados por un adulto con
+                                boleto. Para niños mayores de 12 años, ofrecemos descuentos especiales en boletos.
+                            </p>
                         </div>
                         <div class="col-md-6 mb-5">
-                            <h6>How often do you release updates?</h6>
-                            <p class="text-muted">Nam liber tempor cum soluta nobis eleifend option congue nihil imper
-                                per tem por legere me doming.</p>
+                            <h6>¿Puedo tomar fotos durante la exposición?</h6>
+                            <p class="text-muted">
+                                Por supuesto! Animamos a los asistentes a tomar fotos y compartir su experiencia en
+                                redes sociales. No olvides usar nuestro hashtag oficial #DeluxElegante para que podamos
+                                ver tus publicaciones.
+                            </p>
                         </div>
                         <div class="col-md-6 mb-5">
-                            <h6>What is your refund policy?</h6>
-                            <p class="text-muted">Nam liber tempor cum soluta nobis eleifend option congue nihil imper
-                                per tem por legere me doming.</p>
+                            <h6>¿Hay estacionamiento disponible en el lugar del evento?</h6>
+                            <p class="text-muted">
+                                Sí, ofrecemos estacionamiento en el lugar. Tenemos opciones de estacionamiento regular y
+                                estacionamiento VIP disponibles para los asistentes. Los detalles sobre tarifas y
+                                ubicación se pueden encontrar en nuestra página web.
+                            </p>
                         </div>
                         <div class="col-md-6 mb-5">
-                            <h6>How can I contact you?</h6>
-                            <p class="text-muted">Nam liber tempor cum soluta nobis eleifend option congue nihil imper
-                                per tem por legere me doming.</p>
+                            <h6>¿Se ofrecerán pruebas de manejo de los carros de lujo?</h6>
+                            <p class="text-muted">
+                                En esta edición de la exposición, no tendremos pruebas de manejo en el lugar. Sin
+                                embargo, podrás conocer de cerca los vehículos y obtener información detallada sobre sus
+                                características.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row mt-4">
                 <div class="col-md-6 mx-auto text-center">
-                    <h5 class="mb-4">Have questions?</h5>
-                    <a href="#" class="btn btn-primary">Contact us</a>
+                    <h5 class="mb-4">¿Tienes alguna pregunta?</h5>
+                    <a href="#forms" class="btn btn-primary">Contactar</a>
                 </div>
             </div>
         </div>
@@ -353,63 +402,53 @@
 
     <!--news section-->
     <section class="py-7 bg-dark section-angle top-left bottom-left" id="blog">
-        <div class="container">
+        <div id="forms" class="container">
             <div class="row">
                 <div class="col-md-6 mx-auto text-center">
-                    <h2 class="heading-black">News from Knight.</h2>
-                    <p class="text-muted lead">What's new at Knight.</p>
+                    <h2 class="heading-black">Fromularios</h2>
+                    <p class="text-muted lead">Agenda/Contacto</p>
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-md-4">
-                    <div class="card">
-                        <a href="#">
-                            <img class="card-img-top img-raised" src="img/blog-1.jpg" alt="Blog 1">
-                        </a>
+                <div class="col-sm-12 col-md-6">
+                    <div class="card card-bg">
                         <div class="card-body">
-                            <a href="#" class="card-title mb-2">
-                                <h5>We launch new iOS & Android mobile apps</h5>
-                            </a>
-                            <p class="text-muted small-xl mb-2">Sep 27, 2018</p>
-                            <p class="card-text">Nam liber tempor cum soluta nobis eleifend option congue nihil imper,
-                                consectetur adipiscing elit. <a href="#">Learn more</a></p>
+                            <p class="text-white text-center mb-2">Formulario de Registro</p>
+                            <form action="">
+                                <label for="names" class="mt-2">Nombre(s):</label>
+                                <input type="text" class="form-control">
+                                <label for="lastName" class="mt-2">Apellido(s):</label>
+                                <input type="text" class="form-control">
+                                <label for="phone" class="mt-2">No. Teléfono:</label>
+                                <input type="number" class="form-control">
+                                <label for="email" class="mt-2">Correo eléctronico:</label>
+                                <input type="email" class="form-control">
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-secondary mt-3">Enviar</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-12 col-md-6">
                     <div class="card">
-                        <a href="#">
-                            <img class="card-img-top img-raised" src="img/blog-2.jpg" alt="Blog 2">
-                        </a>
                         <div class="card-body">
-                            <a href="#" class="card-title mb-2">
-                                <h5>New update is available for the editor</h5>
-                            </a>
-                            <p class="text-muted small-xl mb-2">August 16, 2018</p>
-                            <p class="card-text">Nam liber tempor cum soluta nobis eleifend option congue nihil imper,
-                                consectetur adipiscing elit. <a href="#">Learn more</a></p>
+                            <p class="text-muted text-center mb-2">Formulario de Contacto</p>
+                            <form action="">
+                                <label for="names" class="mt-2">Nombre(s):</label>
+                                <input type="text" class="form-control">
+                                <label for="lastName" class="mt-2">Paquete:</label>
+                                <input type="text" class="form-control">
+                                <label for="phone" class="mt-2">No. Teléfono:</label>
+                                <input type="number" class="form-control">
+                                <label for="email" class="mt-2">Correo eléctronico:</label>
+                                <input type="email" class="form-control">
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-secondary mt-3">Enviar</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <a href="#">
-                            <img class="card-img-top img-raised" src="img/blog-3.jpg" alt="Blog 3">
-                        </a>
-                        <div class="card-body">
-                            <a href="#" class="card-title mb-2">
-                                <h5>The story of building #1 page builder</h5>
-                            </a>
-                            <p class="text-muted small-xl mb-2">December 2nd, 2017</p>
-                            <p class="card-text">Nam liber tempor cum soluta nobis eleifend option congue nihil imper,
-                                consectetur adipiscing elit. <a href="#">Learn more</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-6">
-                <div class="col-md-6 mx-auto text-center">
-                    <a href="#" class="btn btn-primary">View all posts</a>
                 </div>
             </div>
         </div>
@@ -420,50 +459,36 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-5 mr-auto">
-                    <h5>About Knight</h5>
-                    <p class="text-muted">Magnis modipsae que voloratati andigen daepeditem quiate conecus aut labore.
-                        Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam explabo.</p>
+                    <h5>Delux</h5>
+                    <p class="text-muted">
+                        Donde el Pasado Sobre Ruedas Crea un Futuro Memorables.
+                    </p>
                     <ul class="list-inline social social-sm">
                         <li class="list-inline-item">
-                            <a href=""><i class="fa fa-facebook"></i></a>
+                            <a href="www.linkedin.com/in/gonzálezcruzjosémaría" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href=""><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href=""><i class="fa fa-google-plus"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href=""><i class="fa fa-dribbble"></i></a>
+                            <a href="https://portfoliojose.netlify.app/" target="_blank"><i class="fa-solid fa-image-portrait"></i></a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-sm-2">
                     <h5>Legal</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Refund policy</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Terminos</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-2">
-                    <h5>Partner</h5>
+                    <h5>Ayuda</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Refer a friend</a></li>
-                        <li><a href="#">Affiliates</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-2">
-                    <h5>Help</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Log in</a></li>
+                        <li><a href="#">Soporte</a></li>
                     </ul>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-12 text-muted text-center small-xl">
-                    &copy; 2019 Knight - All Rights Reserved
+                    &copy; 2023 Delux - Derechos reservados (José María GC.)
                 </div>
             </div>
         </div>
@@ -474,29 +499,6 @@
         <i class="fa fa-angle-up" aria-hidden="true"></i>
     </div>
 
-    <!-- theme switcher (FOR DEMO ONLY - REMOVE FROM PRODUCTION)-->
-    <div class="switcher-wrap">
-        <div class="switcher-trigger">
-            <span class="fa fa-gear"></span>
-        </div>
-        <div class="color-switcher">
-            <h6>Color Switcher</h6>
-            <ul class="mt-3 clearfix">
-                <li class="bg-teal active" data-color="default" title="Default Teal"></li>
-                <li class="bg-purple" data-color="purple" title="Purple"></li>
-                <li class="bg-blue" data-color="blue" title="Blue"></li>
-                <li class="bg-red" data-color="red" title="Red"></li>
-                <li class="bg-green" data-color="green" title="Green"></li>
-                <li class="bg-indigo" data-color="indigo" title="Indigo"></li>
-                <li class="bg-orange" data-color="orange" title="Orange"></li>
-                <li class="bg-cyan" data-color="cyan" title="Cyan"></li>
-                <li class="bg-yellow" data-color="yellow" title="Yellow"></li>
-                <li class="bg-pink" data-color="pink" title="Pink"></li>
-            </ul>
-            <p>These are just demo colors. You can <b>easily</b> create your own color scheme.</p>
-        </div>
-    </div>
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -505,6 +507,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/countDown.js"></script>
+    <script src="js/moveToId.js"></script>
 </body>
 
 </html>
