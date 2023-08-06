@@ -1,6 +1,19 @@
-.text-justify {
-    text-align: justify!important;
+/* Estilo para ocultar los botones de incremento y decremento */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
+
+input[type="number"] {
+    /* Estilo adicional para evitar que se muestre un pequeño espacio en Safari */
+    -moz-appearance: textfield;
+}
+
+.text-justify {
+    text-align: justify !important;
+}
+
 /* Logo */
 .img-containerLogo {
     width: 200px;
@@ -9,8 +22,10 @@
 }
 
 .img-containerLogo img {
-    width: 100%; /* Ajustar la imagen al 100% del ancho del contenedor */
-    height: 100%; /* Ajustar la imagen al 100% de la altura del contenedor */
+    width: 100%;
+    /* Ajustar la imagen al 100% del ancho del contenedor */
+    height: 100%;
+    /* Ajustar la imagen al 100% de la altura del contenedor */
     object-fit: contain;
 }
 
@@ -23,7 +38,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px; /* Initial height */
+    height: 400px;
+    /* Initial height */
     background-color: #f0f0f0;
     overflow: auto;
 }
@@ -37,6 +53,7 @@
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 /* Video */
 #video-section {
     position: relative;
@@ -91,7 +108,7 @@ iframe {
 }
 
 .card-bg {
-    background-color: #573d06!important;
+    background-color: #573d06 !important;
 }
 
 @media all and (max-width: 768px) {

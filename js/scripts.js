@@ -71,3 +71,71 @@ $(function () {
         $(this).addClass('active');
     });
 });
+
+function validateForm() {
+    var names = document.getElementById("names").value;
+    var lastName = document.getElementById("lastName").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+
+    if (names === "" || lastName === "" || phone === "" || email === "") {
+        handleMessage('error', 'Error', 'Por favor, complete todos los campos.');
+        return;
+    } else if (!validatePhoneNumber(phone)) {
+        handleMessage('error', 'Error', 'Por favor, verifique su número de teléfono.');
+        return;
+    } else {
+        // Aquí puedes realizar acciones adicionales antes de enviar el formulario
+        clearForm();
+        handleMessage('success', 'Exito', 'Se ha enviado con éxito el formulario.');
+    }
+}
+
+function validateContactForm() {
+    var names = document.getElementById("namesContact").value;
+    var package = document.getElementById("package").value;
+    var phone = document.getElementById("phoneContact").value;
+    var email = document.getElementById("emailContact").value;
+
+    if (names === "" || package === "" || phone === "" || email === "") {
+        handleMessage('error', 'Error', 'Por favor, complete todos los campos.');
+        return;
+    } else if (!validatePhoneNumber(phone)) {
+        handleMessage('error', 'Error', 'Por favor, verifique su número de teléfono.');
+        return;
+    } else {
+        // Aquí puedes realizar acciones adicionales antes de enviar el formulario
+        clearFormContact();
+        handleMessage('success', 'Exito', 'Se ha enviado con éxito el formulario.');
+    }
+}
+
+function clearForm() {
+    document.getElementById("names").value = "";
+    document.getElementById("lastName").value = "";
+    document.getElementById("phone").value = "";
+    document.getElementById("email").value = "";
+}
+
+function clearFormContact() {
+    document.getElementById("namesContact").value = "";
+    document.getElementById("package").value = "";
+    document.getElementById("phoneContact").value = "";
+    document.getElementById("emailContact").value = "";
+}
+
+function handleMessage(icon, title, text) {
+    Swal.fire({
+        icon: `${icon}`,
+        title: `${title}`,
+        text: `${text}`,
+    });
+}
+
+function validatePhoneNumber(phoneNumber) {
+    // Eliminar espacios en blanco y guiones (si los hay)
+    const cleanPhoneNumber = phoneNumber.replace(/\s|-/g, "");
+
+    // Validar si tiene exactamente 10 dígitos
+    return /^\d{10}$/.test(cleanPhoneNumber);
+}
