@@ -79,7 +79,7 @@ body {
     color: #CFD8DC;
     text-align: left;
     background-color: var(--grayBlack);
-    max-width: 100% !important;
+    width: 100% !important;
     overflow-x: hidden !important;
 }
 
